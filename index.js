@@ -1,7 +1,6 @@
 //Import npm packages
 import express from "express";
 import axios from "axios";
-import bodyParser from "body-parser";
 
 //Import the key and URL from config.js
 import { API_KEY, API_URL } from "./config.js";
@@ -86,7 +85,6 @@ app.post("/request-city", async (req, res) => {
                 icon = "clear";
                 break;
         }
-
         res.render("index.ejs", {
             name: result.data.name,
             temp: Math.round(result.data.main.temp),
@@ -94,6 +92,7 @@ app.post("/request-city", async (req, res) => {
             humidity: result.data.main.humidity,
             icon: icon
         });
+
     } catch (error) {
         console.log(error.response.data)
         res.status(500);
