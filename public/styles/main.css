@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 90%;
+    max-height: 100%;
+    max-width: 450px;
+    margin: 100px auto 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 20px;
+}
+
+.form {
+    width: 100%;
+    margin: 0px auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-input {
+    border: 0;
+    flex: 1;
+    height: 60px;
+    background: #ebfffc;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.search-button {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 20px;
+}
+
+.weather-container {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.weather-icon {
+    padding-top: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.text {
+    color: white
+}
+
+
+.description-container {
+    display: flex;
+    width: 100%;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.description-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-container div p {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.description-icon {
+    width: 36px;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

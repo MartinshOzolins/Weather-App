@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherGuru</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+    <div class="card">
+        <form action="/request-city" method="POST" class="form">
+            <label for="place" class="sr-only">Enter place:</label>
+            <input type="text" id="place" name="place" placeholder="Enter place" class="search-input"/>
+            <button type="submit" class="search-button">
+                <img src="images/search-icon.png" class="search-icon" alt="Weather icon" />
+            </button>
+        </form>
+        <div class="weather-container">
+            <div>
+                <img src="images/<%= icon %>.png" class="weather-icon" alt="Weather icon" />
+            </div>
+            <h1 class="text">
+                <%= temp%> °C
+            </h1>
+            <h2 class="text">
+                <%= name%>
+            </h2>
+            <div class="description-container">
+                <div>
+                    <img src="images/wind.png" class="description-icon" alt="Weather icon"/> 
+                    <p class="text" >
+                        <%= wind %> m/s
+                    </p>
+                </div>
+                <div>
+                    <img src="images/humidity.png" class="description-icon" alt="Weather icon"/> 
+                    <p class="text" >
+                        <%= humidity %> %
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
